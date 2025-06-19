@@ -1,13 +1,82 @@
-<<<<<<< HEAD
-# React + Vite
+📽️ Movie Hub - React App (Work in Progress)
+Welcome to Movie Hub, a beautifully crafted React.js web application that brings you the latest trending movies, TV shows, and famous personalities — powered by TMDB API. Built with Redux, React Router, and Tailwind CSS for a seamless modern experience.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+⚠️ Note: This was an earlier project and is currently being updated for full responsiveness and mobile support.
 
-Currently, two official plugins are available:
+🌟 Features
+🔍 Global Search for movies, TV shows, or people
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-=======
-# TrendFlix
-A modern React-based movie &amp; TV show discovery platform powered by the TMDB API. Search, explore trending titles, view detailed profiles, watch trailers, and get intelligent recommendations.
->>>>>>> 26fe4e34394cd5309f1cf2e0c2ba9f7ab4891e56
+🎬 Trending Section (with filters for movie, tv, all)
+
+📺 Detailed Movie/TV Pages with:
+
+Overview, Tagline, Genres, Release Date
+
+Platform availability (rent, buy, stream)
+
+IMDb + Wiki links
+
+👥 People Page with individual details
+
+🎞️ Play Trailer (YouTube embedded player)
+
+🔁 Recommendations and Similar content
+
+📃 Modern UI with hover effects and clean layout
+
+🌀 Infinite Scroll in Trending page
+
+⚛️ Fully Redux-powered data flow
+
+🛠️ Tech Stack
+React.js – Functional components with hooks
+
+React Router DOM – Navigation between pages
+
+Redux Toolkit – Centralized state management
+
+Tailwind CSS – Fast UI styling with utility classes
+
+Axios – API calls to TMDB
+
+TMDB API – Rich movie, TV, and people data
+
+React Player – Embed and play trailers from YouTube
+
+📂 Folder Structure (Simplified)
+cpp
+Copy
+Edit
+📁 src/
+├── 📁 Components/        // Navbar, Cards, Header, etc.
+├── 📁 Pages/             // MovieDetails, Trending, People, etc.
+├── 📁 Store/             // Redux slices & actions
+├── 📁 Utils/             // Axios config, Loader, etc.
+└── App.jsx / index.js
+🧪 Planned Improvements
+✅ Modern UI & full feature set
+
+🔧 Responsive Design for mobile and tablet (WIP)
+
+♿ Accessibility improvements
+
+🌍 Dark/Light theme toggle
+
+🚀 How to Run Locally
+bash
+Copy
+Edit
+git clone https://github.com/your-username/movie-hub.git
+cd movie-hub
+npm install
+npm run dev
+📸 Screenshots (Optional)
+Add some screenshots here of the app in action!
+
+📬 Connect With Me
+LinkedIn: Suryansh Kaintura
+
+Portfolio: yourportfolio.com
+
+📄 License
+MIT License © YourName
