@@ -1,0 +1,69 @@
+import React, { useEffect, useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import Topnav from '../Components/Topnav'
+import Dropdown from './Dropdown'
+import Axios from "../Utils/Axios"
+import Loader from '../Utils/Loader'
+import VerticalCard from './VerticalCard'
+
+import InfiniteScroll from 'react-infinite-scroll-component'
+
+function People() {
+  const navigate = useNavigate()
+  const [category, setcategory] = useState("popular")
+  const [person, setperson] = useState([])
+  
+  const [page, setpage] = useState(1)
+  //data fetched
+  const getPerson = () => {
+    Axios.get(`/person/popular?page=${page}`)
+      .then((res) =>
+        setperson((prev) => [...prev, ...res.data.results])
+        , setpage(page + 1)
+
+      )
+      .catch((err) => console.log(err))
+  }
+  console.log(person)
+
+
+  // new thing i learn i made the date to up it simple logic but need focus for that
+  const referdata = () => {
+    if (person.length == 0) {
+      getPerson()
+
+    }
+    else {
+      setperson([])
+      setpage(1)
+      getPerson()
+    }
+  }
+
+  useEffect(() => {
+    referdata();
+  }, [category])
+
+  return person && (
+    <div className='bg-slate-900 min-h-screen w-screen '>
+      <div className=' w-full h-[10vh] p-[3%]   flex justify-between  '>
+        <Link className='text-2xl text-zinc-400 font-semibold hover:text-[#07E2F3]' onClick={() => navigate(-1)} >
+          <i className='text-gray-400 hover:text-[#07E2F3] ri-arrow-left-line'></i>
+          People
+        </Link>
+        <Topnav />
+       
+      </div>
+      <InfiniteScroll
+        dataLength={person.length}
+        loader={<Loader />}
+        hasMore={true}
+        next={getPerson}
+      >
+        <VerticalCard data={person} title="person"/>
+      </InfiniteScroll>
+    </div>
+  )
+}
+
+export default People
