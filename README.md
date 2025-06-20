@@ -66,6 +66,7 @@ git clone https://github.com/mikierror/TrendFlix.git
 cd movie-hub
 npm install
 npm run dev
+(Use Tailwind Previous Version)
 
 📸 Screenshots 
 
