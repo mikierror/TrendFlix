@@ -62,7 +62,7 @@ React Player – Embed and play trailers from YouTube
 
 🚀 How to Run Locally
 
-git clone https://github.com/your-username/movie-hub.git
+git clone https://github.com/mikierror/TrendFlix.git
 cd movie-hub
 npm install
 npm run dev
