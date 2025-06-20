@@ -61,7 +61,7 @@ React Player – Embed and play trailers from YouTube
 🌍 Dark/Light theme toggle
 
 🚀 How to Run Locally
-
+Live Link : https://trendflix-delta.vercel.app/
 git clone https://github.com/mikierror/TrendFlix.git
 cd movie-hub
 npm install
