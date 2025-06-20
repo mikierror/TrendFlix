@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import SideNav from './SideNav'
-import Topnav from './Topnav'
+import SideNav from '../Components/SideNav'
+import Topnav from '../Components/Topnav'
 import axios from '../Utils/Axios'
-import Header from './Header'
-import Horizantoal from './Horizantoal'
+import Header from '../Partial/Header'
+import Horizantoal from '../Components/Horizantoal'
 import Loader from '../Utils/Loader'
 import { Outlet } from 'react-router-dom'
 function Home() {
@@ -33,7 +33,6 @@ useEffect(()=>{
 
 
 
-console.log(wallpaper)
   return wallpaper!=null && trending!=null ? (
     <div className=' w-screen min-h-screen flex bg-gray-900 px-5' id='hello'>
      

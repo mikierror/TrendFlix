@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import Topnav from '../Components/Topnav'
-import Dropdown from './Dropdown'
+import Dropdown from '../Components/Dropdown'
 import Axios from "../Utils/Axios"
 import Loader from '../Utils/Loader'
-import VerticalCard from './VerticalCard'
+import VerticalCard from '../Components/VerticalCard'
 
 import InfiniteScroll from 'react-infinite-scroll-component'
 
@@ -24,7 +24,6 @@ function People() {
       )
       .catch((err) => console.log(err))
   }
-  console.log(person)
 
 
   // new thing i learn i made the date to up it simple logic but need focus for that

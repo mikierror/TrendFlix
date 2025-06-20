@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Topnav from '../Components/Topnav';
-import Dropdown from './Dropdown';
+import Dropdown from '../Components/Dropdown';
 import axios from "../Utils/Axios";
-import VerticalCard from './VerticalCard';
+import VerticalCard from '../Components/VerticalCard';
 import Loader from '../Utils/Loader';
 import InfiniteScroll from "react-infinite-scroll-component";
 

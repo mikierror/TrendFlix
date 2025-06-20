@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Dropdown from '../Partial/Dropdown';
+import Dropdown from './Dropdown';
 import HorizantolCard from './HorizantolCard';
 
 function Horizontal({ trending, category }) {

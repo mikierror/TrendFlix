@@ -1,6 +1,6 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
-import Home from './Components/Home';
+import Home from './Partial/Home';
 import Trending from './Partial/Trending';
 import Popular from './Partial/Popular';
 import Movies from './Partial/Movies';
@@ -10,9 +10,9 @@ import People from './Partial/People';
 import PersonDetails from './Partial/PersonDetails';
 import Tvdetails from './Partial/Tvdetails';
 import Alldetails from './Partial/Alldetails';
-import Trailer from './Components/Trailer';
-import About from './Components/About';
-import Contact from './Components/Contact';
+import Trailer from './Partial/Trailer';
+import About from './Partial/About';
+import Contact from './Partial/Contact';
 
 function Applayout() {
   return (
@@ -29,7 +29,7 @@ const AppRouter = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />,
+        element: <Home/>,
         children: [
           {
             path: ":mediaType/:id/Trailer", // Adjusted path for People (consistent lowercase)
