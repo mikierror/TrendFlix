@@ -7,7 +7,7 @@ import Movies from './Partial/Movies';
 import MovieDetails from './Partial/MovieDetails';
 import Tvshow from './Partial/Tvshow';
 import People from './Partial/People';
-import PersonDetails from './Partial/PersonDetails';
+import PersonDetails from './Partial/Persondetails';
 import Tvdetails from './Partial/Tvdetails';
 import Alldetails from './Partial/Alldetails';
 import Trailer from './Partial/Trailer';
