@@ -1,4 +1,4 @@
-📽️ Movie Hub - React App (Work in Progress)
+📽️ TrendFlix - React App (Work in Progress)
 Welcome to Movie Hub, a beautifully crafted React.js web application that brings you the latest trending movies, TV shows, and famous personalities — powered by TMDB API. Built with Redux, React Router, and Tailwind CSS for a seamless modern experience.
 
 ⚠️ Note: This was an earlier project and is currently being updated for full responsiveness and mobile support.
@@ -44,9 +44,7 @@ TMDB API – Rich movie, TV, and people data
 React Player – Embed and play trailers from YouTube
 
 📂 Folder Structure (Simplified)
-cpp
-Copy
-Edit
+
 📁 src/
 ├── 📁 Components/        // Navbar, Cards, Header, etc.
 ├── 📁 Pages/             // MovieDetails, Trending, People, etc.
@@ -63,20 +61,18 @@ Edit
 🌍 Dark/Light theme toggle
 
 🚀 How to Run Locally
-bash
-Copy
-Edit
+
 git clone https://github.com/your-username/movie-hub.git
 cd movie-hub
 npm install
 npm run dev
 📸 Screenshots (Optional)
+
 Add some screenshots here of the app in action!
 
 📬 Connect With Me
 LinkedIn: Suryansh Kaintura
 
-Portfolio: yourportfolio.com
 
 📄 License
-MIT License © YourName
+MIT License © Suryansh
