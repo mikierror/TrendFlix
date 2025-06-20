@@ -1,4 +1,4 @@
-![Vite + React - Personal - Microsoft​ Edge 6_19_2025 11_13_18 PM](https://github.com/user-attachments/assets/42e42911-b99e-4fa0-9890-9f965d9013a4)📽️ TrendFlix - React App (Work in Progress)
+📽️ TrendFlix - React App (Work in Progress)
 Welcome to Movie Hub, a beautifully crafted React.js web application that brings you the latest trending movies, TV shows, and famous personalities — powered by TMDB API. Built with Redux, React Router, and Tailwind CSS for a seamless modern experience.
 
 ⚠️ Note: This was an earlier project and is currently being updated for full responsiveness and mobile support.
@@ -70,6 +70,7 @@ npm run dev
 📸 Screenshots 
 
 ![Vite + React - Personal - Microsoft​ Edge 6_19_2025 11_05_44 PM](https://github.com/user-attachments/assets/737d616f-7449-4e12-b718-b6ebf9a11193)
+![Vite + React - Personal - Microsoft​ Edge 6_19_2025 11_13_18 PM](https://github.com/user-attachments/assets/42e42911-b99e-4fa0-9890-9f965d9013a4)
 ![Vite + React - Personal - Microsoft​ Edge 6_19_2025 11_06_49 PM](https://github.com/user-attachments/assets/515fa00a-9211-416c-b540-8b1c7ca21d4c)
 ![Uploading Vite + React - Personal - Microsoft​ Edge 6_19_2025 11_13_18 PM.png…![Vite + React - Personal - Microsoft​ Edge 6_19_2025 11_06_23 PM](https://github.com/user-attachments/assets/40ed498e-9726-4fc0-a0ca-ddd0d2e9b8ed)
 ]()
