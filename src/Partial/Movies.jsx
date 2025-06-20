@@ -51,7 +51,7 @@ useEffect(()=>{
                     Movies
                 </Link>
                 <Topnav/>
-                <Dropdown options={["top_rated","popular","upcoming","now_playing"]} category={(e)=>setcategory(e.target.value)} title={"Popular-list"}/>
+                <Dropdown options={["top_rated","popular","upcoming","now_playing"]} category={setcategory} title={"Popular-list"}/>
           </div>
           <InfiniteScroll
           dataLength={popular.length}

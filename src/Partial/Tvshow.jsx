@@ -51,7 +51,7 @@ function Tvshow() {
           TvShows
         </Link>
         <Topnav />
-        <Dropdown options={["airing_today", "on_the_air", "popular", "top_rated"]} category={(e) => setcategory(e.target.value)} title={"Category"} />
+        <Dropdown options={["airing_today", "on_the_air", "popular", "top_rated"]} category={setcategory} title={"Category"} />
       </div>
       <InfiniteScroll
         dataLength={tv.length}

@@ -3,7 +3,8 @@ import React from 'react';
 
 const Dropdown = ({ title, options, category }) => {
   function handledata(e){
-    category(e.target.value)
+      category(e.target.value)
+    console.log(e.target.value);
     
   }
   return (

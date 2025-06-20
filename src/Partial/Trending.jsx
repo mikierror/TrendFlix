@@ -58,12 +58,12 @@ function Trending() {
           <Dropdown
             title="Category"
             options={["all", "tv", "movie"]}
-            category={(e) => setSelectedCategory(e.target.value)}
+            category={ setSelectedCategory}
           />
           <Dropdown
             title="Duration"
             options={["day", "week"]}
-            category={(e) => setDuration(e.target.value)}
+            category={() => setDuration}
           />
         </div>
       </div>

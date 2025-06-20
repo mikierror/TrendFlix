@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Contact() {
+  const navigate=useNavigate(-1)
   const [form, setForm] = useState({ name: '', email: '', message: '' });
 
   const handleChange = (e) => {
@@ -14,8 +16,14 @@ function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-900 text-white px-6 py-12 flex items-center justify-center">
-      <div className="max-w-2xl w-full space-y-8">
+    <div className="min-h-screen bg-slate-900 text-white px-6 py-12 flex flex-col justify-center items-center">
+      <Link
+          className='text-2xl mr-[180vh] mb-[25vh] text-zinc-400 font-semibold h-fit w-fit hover:text-[#07E2F3] flex '
+          onClick={() => navigate(-1)}
+        >
+          <i className='ri-arrow-left-line'></i> Back
+        </Link>
+      <div className="max-w-2xl w-full space-y-8 ">
         <h1 className="text-4xl font-bold text-[#07E2F3]">📩 Contact Us (No Backend)-No use</h1>
 
         <p className="text-gray-300">

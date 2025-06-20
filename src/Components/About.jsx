@@ -1,8 +1,16 @@
 import React from 'react'
+import { Link, useNavigate } from 'react-router-dom';
 
 function About() {
+  const navigate= useNavigate(-1)
   return (
     <div className="min-h-screen bg-slate-900 text-white px-6 py-12">
+       <Link
+          className='text-2xl text-zinc-400 font-semibold hover:text-[#07E2F3] flex '
+          onClick={() => navigate(-1)}
+        >
+          <i className='ri-arrow-left-line'></i> Back
+        </Link>
       <div className="max-w-4xl mx-auto space-y-6">
         <h1 className="text-4xl font-bold text-[#07E2F3]">🎬 About Movie Hub</h1>
 
