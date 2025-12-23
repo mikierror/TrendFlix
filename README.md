@@ -3,6 +3,8 @@ Welcome to Movie Hub, a beautifully crafted React.js web application that brings
 
 ⚠️ Note: This was an earlier project and is currently being updated for full responsiveness and mobile support.
 
+Live Link : https://trendflix-delta.vercel.app/
+
 🌟 Features
 🔍 Global Search for movies, TV shows, or people
 
