@@ -44,14 +44,16 @@ function Tvshow() {
   }, [category])
 
   return tv && (
-    <div className='bg-slate-900 min-h-screen w-screen '>
-      <div className=' w-full h-[10vh] p-[3%]   flex justify-between  '>
-        <Link className='text-2xl text-zinc-400 font-semibold hover:text-[#07E2F3]' onClick={() => navigate(-1)} >
-          <i className='text-gray-400 hover:text-[#07E2F3] ri-arrow-left-line'></i>
-          TvShows
-        </Link>
+    <div className='bg-slate-950 min-h-screen max-w-screen '>
+    <div className=' w-full h-fit px-[3%] flex flex-col items-center justify-center '>
         <Topnav />
-        <Dropdown options={["airing_today", "on_the_air", "popular", "top_rated"]} category={setcategory} title={"Category"} />
+        <div className='flex items-center justify-between h-fit w-full mt-3'>
+        <Link className='hidden md:block text-2xl text-zinc-400 font-semibold hover:text-[#07E2F3]' onClick={() => navigate(-1)} >
+            <i className='text-gray-400 hover:text-[#07E2F3] ri-arrow-left-line border-2 rounded-full p-1 mr-2 bg-slate-800'></i>
+            Movies
+          </Link>
+         <div className="flex gap-3 ">  <Dropdown options={["airing_today", "on_the_air", "popular", "top_rated"]} category={setcategory} title={"Category"} /></div>
+      </div> 
       </div>
       <InfiniteScroll
         dataLength={tv.length}

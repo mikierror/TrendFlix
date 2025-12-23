@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function VerticalCard({ data, title }) {
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-8 px-6 py-8">
+    <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-8 px-6 py-8">
       {data.map((item, i) => {
         const imagePath = item.profile_path || item.backdrop_path || item.poster_path;
         const imageUrl = imagePath

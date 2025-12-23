@@ -5,7 +5,7 @@ function HorizantolCard({ trending }) {
   const baseImg = "https://image.tmdb.org/t/p/w500";
 
   return (
-    <div className="w-full pb-8 px-5 flex gap-6 overflow-x-auto no-scrollbar">
+    <div className="w-full  py-2 flex gap-6 overflow-x-auto no-scrollbar">
       {trending.map((item) => {
         const imagePath =
           item.poster_path || item.backdrop_path || item.profile_path;
@@ -17,7 +17,7 @@ function HorizantolCard({ trending }) {
           <Link
             to={`/${item.media_type}/details/${item.id}`}
             key={item.id}
-            className="group relative h-[35vh] w-[24vh] min-w-[170px] rounded-xl overflow-hidden bg-[#1e1e1e] shadow-md hover:scale-[1.05] duration-300 ease-in-out cursor-pointer"
+            className="group relative h-[28vh] w-[24vh] min-w-[170px] rounded-xl overflow-hidden bg-[#1e1e1e] shadow-md hover:scale-[1.05] duration-300 ease-in-out cursor-pointer"
           >
             {/* Card Image */}
             <img

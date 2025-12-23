@@ -16,12 +16,7 @@ const infoLinks = [
 
 const SideNav = () => {
   return (
-    <div className="w-[20%] h-full pt-5 pl-7 border-gray-400 text-white">
-      {/* Logo Section */}
-      <div className="flex items-center gap-2">
-        <i className="text-[#07E2F3] ri-tv-line text-2xl"></i>
-        <h2 className="text-white font-bold text-2xl">TrendFlix</h2>
-      </div>
+    <div className="hidden lg:block w-full h-full pt-5 pl-7 border-gray-400 text-white">
 
       {/* Navigation */}
       <h2 className="mt-8 text-xl font-semibold">New Feeds</h2>

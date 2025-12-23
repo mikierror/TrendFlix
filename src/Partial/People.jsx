@@ -12,7 +12,7 @@ function People() {
   const navigate = useNavigate()
   const [category, setcategory] = useState("popular")
   const [person, setperson] = useState([])
-  
+
   const [page, setpage] = useState(1)
   //data fetched
   const getPerson = () => {
@@ -44,14 +44,16 @@ function People() {
   }, [category])
 
   return person && (
-    <div className='bg-slate-900 min-h-screen w-screen '>
-      <div className=' w-full h-[10vh] p-[3%]   flex justify-between  '>
-        <Link className='text-2xl text-zinc-400 font-semibold hover:text-[#07E2F3]' onClick={() => navigate(-1)} >
-          <i className='text-gray-400 hover:text-[#07E2F3] ri-arrow-left-line'></i>
-          People
-        </Link>
+    <div className='bg-slate-950 min-h-screen max-w-screen '>
+      <div className=' w-full h-fit px-[3%] flex flex-col items-center justify-center '>
         <Topnav />
-       
+        <div className='flex items-center justify-between h-fit w-full mt-3'>
+          <Link className='hidden md:block text-2xl text-zinc-400 font-semibold hover:text-[#07E2F3]' onClick={() => navigate(-1)} >
+            <i className='text-gray-400 hover:text-[#07E2F3] ri-arrow-left-line border-2 rounded-full p-1 mr-2 bg-slate-800'></i>
+            People
+          </Link>
+
+        </div>
       </div>
       <InfiniteScroll
         dataLength={person.length}
@@ -59,7 +61,7 @@ function People() {
         hasMore={true}
         next={getPerson}
       >
-        <VerticalCard data={person} title="person"/>
+        <VerticalCard data={person} title="person" />
       </InfiniteScroll>
     </div>
   )

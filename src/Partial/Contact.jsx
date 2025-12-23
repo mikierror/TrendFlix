@@ -21,7 +21,7 @@ function Contact() {
           className='text-2xl mr-[180vh] mb-[25vh] text-zinc-400 font-semibold h-fit w-fit hover:text-[#07E2F3] flex '
           onClick={() => navigate(-1)}
         >
-          <i className='ri-arrow-left-line'></i> Back
+         <i className='text-gray-400 text-2xl hover:text-[#07E2F3] ri-arrow-left-line border-2 rounded-full px-1 mr-2 ml-4 bg-slate-800'></i>Back
         </Link>
       <div className="max-w-2xl w-full space-y-8 ">
         <h1 className="text-4xl font-bold text-[#07E2F3]">📩 Contact Us (No Backend)-No use</h1>

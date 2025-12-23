@@ -25,7 +25,7 @@ function TVDetails() {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
-      className='w-screen min-h-[130vh] px-6 md:px-24 py-10 bg-slate-900 text-white'
+      className='max-w-screen min-h-[130vh] px-6 md:px-24 py-10 bg-slate-950 text-white'
     >
       {/* Navigation */}
       <nav className='flex items-center gap-6 text-xl mb-8'>

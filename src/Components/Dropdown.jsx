@@ -6,8 +6,8 @@ const Dropdown = ({ title, options, category }) => {
       category(e.target.value)  
   }
   return (
-    <div className="relative w-48 group">
-      <label className="block text-sm text-[#07E2F3] font-semibold mb-1 pl-1">
+    <div className="relative w-48 group text-sm md:text-base">
+      <label className="block text-xs  text-[#b9b9b9] font-bold uppercase mb-1 pl-1">
         {title}
       </label>
       <div className="relative">
